@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&family=PT+Sans:wght@400;700&family=Rowdies:wght@300;400;700&family=Rubik:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Rowdies', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+
+#map {height: 100vh; z-index: -1;}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    background: url('images/pattern-bg.png') no-repeat center;
+    background-size: cover;
+    color: white;
+    padding: 40px 0 120px 0;
+    text-align: center;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.arrow {
+    background-color: black;
+    padding: 22px 30px !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+.arrow:hover{background-color: hsl(0, 0%, 17%);}
+
+input {
+    font-size: 18px;
+    font-weight: 300;
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#info {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    background-color: white;
+    width: 800px;
+    margin-top: 230px;
+    padding: 10px 0 10px 10px;
+    border-radius: 20px;
+}
+
+.info__content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 20px;
+    border-right: 1px solid hsl(0, 0%, 59%);
+    padding-right: 20px;
+}
+
+.info__firstLine {
+    color: hsl(0, 0%, 59%);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    #info {
+        flex-direction: column;
+        width: 300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .info__content {
+        border: none;
+        margin-bottom: 5px;
+    }
+}
